@@ -15,5 +15,6 @@ namespace JournalApp
 
         public static Entities1 DB { get; }
         public static User CurrentUser { get; set; }
+        public static Group CurrentGroup { get; set; }
     }
 }

@@ -39,7 +39,10 @@ namespace JournalApp
 
         private void groups_Selected(object sender, RoutedEventArgs e)
         {
+            Session.CurrentGroup = groups.SelectedItem as Group;
+            Close();
             GroupWin window = new GroupWin();
+            window.ShowDialog();
         }
 
         private void filter_TextChanged(object sender, TextChangedEventArgs e)
@@ -49,8 +52,6 @@ namespace JournalApp
             {
                 if (!groups.Items.Contains(j.Group) && j.Group.Code.Contains(filter.Text)) groups.Items.Add(j.Group);
             });
-
-
         }
     }
 }

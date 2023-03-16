@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JournalApp"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Window2" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -31,7 +31,7 @@
 
         <StackPanel Grid.Column="1">
             <Label Content="Дисциплины" HorizontalAlignment="Center"/>
-            <ListBox x:Name="disciplines"/>
+            <ListBox x:Name="disciplines" ItemsSource="{Binding Discipline}"/>
         </StackPanel>
     </Grid>
 </Window>
