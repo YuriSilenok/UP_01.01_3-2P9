@@ -7,20 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace tested
+namespace JournalApp
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Journal
+    public partial class Student
     {
         public int ID { get; set; }
-        public int DisciplinID { get; set; }
-        public int TeacherID { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Patronymic { get; set; }
         public int GroupID { get; set; }
+        public System.DateTime BirthDay { get; set; }
     
-        public virtual Disciplin Disciplin { get; set; }
         public virtual Group Group { get; set; }
-        public virtual User User { get; set; }
     }
 }

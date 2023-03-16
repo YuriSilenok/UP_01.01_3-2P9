@@ -7,24 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace tested
+namespace JournalApp
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class Journal
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public User()
-        {
-            this.Journal = new HashSet<Journal>();
-        }
-    
         public int ID { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
+        public int DisciplinID { get; set; }
+        public int TeacherID { get; set; }
+        public int GroupID { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Journal> Journal { get; set; }
+        public virtual Disciplin Disciplin { get; set; }
+        public virtual Group Group { get; set; }
+        public virtual User User { get; set; }
     }
 }

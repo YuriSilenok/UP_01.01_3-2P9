@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace tested
+namespace JournalApp
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml

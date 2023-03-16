@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace tested
+namespace JournalApp
 {
     using System;
     using System.Data.Entity;
