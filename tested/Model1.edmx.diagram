@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="08786cd59a9e4fec86e78f1387d735b4" Name="Diagram1">
+        <EntityTypeShape EntityType="Ass.Disciplin" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ass.Group" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ass.Journal" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ass.Speciality" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ass.Student" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ass.User" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="Ass.FK_Journal_Disciplin" ManuallyRouted="false" />
+        <AssociationConnector Association="Ass.FK_Group_Speciality" ManuallyRouted="false" />
+        <AssociationConnector Association="Ass.FK_Journal_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="Ass.FK_Student_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="Ass.FK_Journal_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
