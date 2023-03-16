@@ -27,14 +27,10 @@ namespace JournalApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            using (var db = new Entities1())
+            Session.CurrentUser.Journal.ToList().ForEach(j => 
             {
-                Session.CurrentUser.Journal.ToList().ForEach(j => 
-                {
-                    if (!groups.Items.Contains(j.Group)) groups.Items.Add(j.Group);
-                });
-            }
-
+                if (!groups.Items.Contains(j.Group)) groups.Items.Add(j.Group);
+            });
         }
 
         private void groups_Selected(object sender, RoutedEventArgs e)

@@ -26,6 +26,18 @@ namespace JournalApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Session.CurrentGroup.Student.ToList().ForEach(s =>
+            {
+                if (!studentsGrid.Items.Contains(s)) studentsGrid.Items.Add(s);
+            });
+            Session.CurrentGroup.Journal.ToList().ForEach(j =>
+            {
+                if (!disciplines.Items.Contains(j.Disciplin)) disciplines.Items.Add(j.Disciplin);
+            });
+        }
+
+        private void studentsGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
 
         }
     }

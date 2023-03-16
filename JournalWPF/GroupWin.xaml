@@ -14,24 +14,21 @@
 
         <StackPanel Grid.Column="0">
             <Label Content="Студенты" HorizontalAlignment="Center"/>
-            <ListBox x:Name="students"
-                     ItemsSource="{Binding Student}">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="{Binding Name}"/>
-                            <Label Content="{Binding Surname}"/>
-                            <Label Content="{Binding Patronymic}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+            <Grid>
+                <DataGrid ItemsSource="{Binding}" x:Name="studentsGrid" AutoGenerateColumns="False" CellEditEnding="studentsGrid_CellEditEnding">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}"/>
+                        <DataGridTextColumn Header="Имя" Binding="{Binding Name}"/>
+                        <DataGridTextColumn Header="Отчество" Binding="{Binding Patronymic}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
         </StackPanel>
 
 
         <StackPanel Grid.Column="1">
             <Label Content="Дисциплины" HorizontalAlignment="Center"/>
-            <ListBox x:Name="disciplines" ItemsSource="{Binding Discipline}"/>
+            <ListBox x:Name="disciplines" ItemsSource="{Binding Disciplin}" DisplayMemberPath="Name"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -9,8 +9,8 @@
         <EntityTypeShape EntityType="Ass.Group" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="Ass.Journal" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Ass.Speciality" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="Ass.Student" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Ass.User" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ass.Student" Width="1.5" PointX="1.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ass.User" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
         <AssociationConnector Association="Ass.FK_Journal_Disciplin" ManuallyRouted="false" />
         <AssociationConnector Association="Ass.FK_Group_Speciality" ManuallyRouted="false" />
         <AssociationConnector Association="Ass.FK_Journal_Group" ManuallyRouted="false" />
